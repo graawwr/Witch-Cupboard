@@ -1,0 +1,3659 @@
+[
+  {
+    "id": "lavender",
+    "commonNames": [
+      "Lavender",
+      "English Lavender"
+    ],
+    "latinName": "Lavandula angustifolia",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Associated with calm, sleep, and cleansing in European folk practice",
+      "Hung in wardrobes and at thresholds to keep the home peaceful"
+    ],
+    "officinalNote": "Historically counted among the official herbs of the old apothecary."
+  },
+  {
+    "id": "rosemary",
+    "commonNames": [
+      "Rosemary"
+    ],
+    "latinName": "Salvia rosmarinus",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Tied to remembrance and fidelity in Mediterranean and English custom",
+      "Branches kept near the door or worn on solemn days"
+    ],
+    "officinalNote": "Once named Rosmarinus officinalis — an official herb of the dispensary."
+  },
+  {
+    "id": "sage",
+    "commonNames": [
+      "Sage",
+      "Garden Sage",
+      "Common Sage"
+    ],
+    "latinName": "Salvia officinalis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Smoke and bundles used for cleansing space in many households",
+      "Said to grant wisdom to those who tend it faithfully"
+    ],
+    "officinalNote": "The very name officinalis marks it as of the apothecary shop."
+  },
+  {
+    "id": "basil",
+    "commonNames": [
+      "Basil",
+      "Sweet Basil"
+    ],
+    "latinName": "Ocimum basilicum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Welcomed at the door in some Mediterranean homes to draw goodwill",
+      "Associated with prosperity and harmonious kitchens"
+    ]
+  },
+  {
+    "id": "peppermint",
+    "commonNames": [
+      "Peppermint",
+      "Mint"
+    ],
+    "latinName": "Mentha × piperita",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Cooling and refreshing in summer folk practice",
+      "Scattered in pantries to discourage unwelcome visitors"
+    ]
+  },
+  {
+    "id": "spearmint",
+    "commonNames": [
+      "Spearmint"
+    ],
+    "latinName": "Mentha spicata",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Gentler cousin to peppermint in hearth magic and kitchen lore",
+      "Used in floor washes for a welcoming home"
+    ]
+  },
+  {
+    "id": "chamomile",
+    "commonNames": [
+      "Chamomile",
+      "German Chamomile"
+    ],
+    "latinName": "Matricaria chamomilla",
+    "category": "herb",
+    "emoji": "🌼",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Sun-like flowers linked to rest and ease at day's end in folk custom",
+      "Sprinkled around the home for tranquility"
+    ]
+  },
+  {
+    "id": "mugwort",
+    "commonNames": [
+      "Mugwort"
+    ],
+    "latinName": "Artemisia vulgaris",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Bound into travel bundles and dream pillows in European folk practice",
+      "Gathered at Midsummer in many country traditions"
+    ]
+  },
+  {
+    "id": "thyme",
+    "commonNames": [
+      "Thyme",
+      "Garden Thyme"
+    ],
+    "latinName": "Thymus vulgaris",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Burned or strewn to purify the air in old household custom",
+      "Given to warriors and mourners for courage and remembrance"
+    ]
+  },
+  {
+    "id": "oregano",
+    "commonNames": [
+      "Oregano"
+    ],
+    "latinName": "Origanum vulgare",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Wild marjoram of the hills — tied to joy and banishing heaviness in Greek folk belief",
+      "Woven into wreaths for weddings and harvest"
+    ]
+  },
+  {
+    "id": "parsley",
+    "commonNames": [
+      "Parsley"
+    ],
+    "latinName": "Petroselinum crispum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Slow to germinate — said in folklore to visit the underworld before rising",
+      "Planted for luck and vitality at the garden's edge"
+    ]
+  },
+  {
+    "id": "cilantro",
+    "commonNames": [
+      "Cilantro",
+      "Coriander"
+    ],
+    "latinName": "Coriandrum sativum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Seeds and leaves both kept in love and fidelity charms in several traditions",
+      "Associated with immortality in ancient Mediterranean lore"
+    ]
+  },
+  {
+    "id": "dill",
+    "commonNames": [
+      "Dill"
+    ],
+    "latinName": "Anethum graveolens",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Hung over cradles and doorways for protection in Northern European custom",
+      "Seeds carried in pockets against envy"
+    ]
+  },
+  {
+    "id": "fennel",
+    "commonNames": [
+      "Fennel"
+    ],
+    "latinName": "Foeniculum vulgare",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Stalks hung on Midsummer Eve against witchcraft in English country lore",
+      "Seeds carried for strength and confidence"
+    ]
+  },
+  {
+    "id": "lemon-balm",
+    "commonNames": [
+      "Lemon Balm"
+    ],
+    "latinName": "Melissa officinalis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Named for bees and sweetness — planted to draw helpful spirits of the garden",
+      "Steeped for cheer and easy company"
+    ],
+    "officinalNote": "Melissa officinalis — an official herb of the old dispensary."
+  },
+  {
+    "id": "calendula",
+    "commonNames": [
+      "Calendula",
+      "Marigold",
+      "Pot Marigold"
+    ],
+    "latinName": "Calendula officinalis",
+    "category": "herb",
+    "emoji": "🌼",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Petals scattered at thresholds and in ritual baths in European folk practice",
+      "Known as marygold in old herbals for its solar cheer"
+    ],
+    "officinalNote": "Calendula officinalis — counted among official apothecary herbs."
+  },
+  {
+    "id": "yarrow",
+    "commonNames": [
+      "Yarrow",
+      "Milfoil"
+    ],
+    "latinName": "Achillea millefolium",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Stalks used for divination and love oracles in British and Celtic custom",
+      "Hung to bind a couple or sewn into wedding garments"
+    ]
+  },
+  {
+    "id": "elder",
+    "commonNames": [
+      "Elder",
+      "Elderberry",
+      "Elder Flower"
+    ],
+    "latinName": "Sambucus nigra",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "The Elder Mother said to dwell in the tree — never cut without asking",
+      "Flowers gathered for blessing and berries for winter stores"
+    ]
+  },
+  {
+    "id": "nettle",
+    "commonNames": [
+      "Nettle",
+      "Stinging Nettle"
+    ],
+    "latinName": "Urtica dioica",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Beaten on the limbs for vigor in old spring customs — handled with respect",
+      "Hung in barns against lightning and ill luck"
+    ]
+  },
+  {
+    "id": "dandelion",
+    "commonNames": [
+      "Dandelion"
+    ],
+    "latinName": "Taraxacum officinale",
+    "category": "herb",
+    "emoji": "🌼",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Clock-flowers for telling time and blowing wishes in children's lore",
+      "Roots and leaves gathered for spring tonics in country practice"
+    ],
+    "officinalNote": "Taraxacum officinale — a humble official of the apothecary."
+  },
+  {
+    "id": "plantain",
+    "commonNames": [
+      "Plantain",
+      "Broadleaf Plantain"
+    ],
+    "latinName": "Plantago major",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Waybread of the roads — bound to the foot for safe travel",
+      "Chewed and applied in field lore as the traveller's first aid"
+    ]
+  },
+  {
+    "id": "mullein",
+    "commonNames": [
+      "Mullein",
+      "Velvet Dock"
+    ],
+    "latinName": "Verbascum thapsus",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Torches dipped in tallow for processions and banishing rites",
+      "Leaves in shoes against rheumatism in Appalachian custom"
+    ]
+  },
+  {
+    "id": "valerian",
+    "commonNames": [
+      "Valerian"
+    ],
+    "latinName": "Valeriana officinalis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Hung in bridal bouquets against quarrels in Northern European lore",
+      "Roots prized for their heavy, earthy scent in sleep pillows"
+    ],
+    "officinalNote": "Valeriana officinalis — official herb of the old shop."
+  },
+  {
+    "id": "passionflower",
+    "commonNames": [
+      "Passionflower",
+      "Maypop"
+    ],
+    "latinName": "Passiflora incarnata",
+    "category": "herb",
+    "emoji": "🌸",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Named for the Passion in missionary lore — each part a symbol of the sacred story",
+      "Used in Southern folk practice for rest and quiet mind"
+    ]
+  },
+  {
+    "id": "echinacea",
+    "commonNames": [
+      "Echinacea",
+      "Purple Coneflower"
+    ],
+    "latinName": "Echinacea purpurea",
+    "category": "herb",
+    "emoji": "🌸",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Native American plains herb adopted into settler folk practice",
+      "Associated with strength and boundary-setting in modern craft"
+    ]
+  },
+  {
+    "id": "goldenseal",
+    "commonNames": [
+      "Goldenseal"
+    ],
+    "latinName": "Hydrastis canadensis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Yellow root of Appalachian and Indigenous trade routes",
+      "Carried for prosperity and success in business in hoodoo-influenced practice"
+    ]
+  },
+  {
+    "id": "american-ginseng",
+    "commonNames": [
+      "American Ginseng",
+      "Ginseng"
+    ],
+    "latinName": "Panax quinquefolius",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Man-shaped root sought in the deep woods — luck to the finder",
+      "Carried for vitality and good fortune in Appalachian lore"
+    ]
+  },
+  {
+    "id": "hawthorn",
+    "commonNames": [
+      "Hawthorn",
+      "May Tree"
+    ],
+    "latinName": "Crataegus monogyna",
+    "category": "herb",
+    "emoji": "🌸",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "May branches brought in for Beltane — the faery tree of the hedge",
+      "Never cut without leave, lest ill luck follow"
+    ]
+  },
+  {
+    "id": "cinnamon",
+    "commonNames": [
+      "Cinnamon"
+    ],
+    "latinName": "Cinnamomum verum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Spice of fire and warmth in hearth magic worldwide",
+      "Burned or sprinkled for fast luck and heated attraction"
+    ]
+  },
+  {
+    "id": "ginger",
+    "commonNames": [
+      "Ginger"
+    ],
+    "latinName": "Zingiber officinale",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Root of fire and digestion in folk practice across Asia and the Americas",
+      "Carried to heat up sluggish situations"
+    ],
+    "officinalNote": "Zingiber officinale — official spice of the dispensary."
+  },
+  {
+    "id": "turmeric",
+    "commonNames": [
+      "Turmeric"
+    ],
+    "latinName": "Curcuma longa",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Golden powder of purification in Hindu and folk practice",
+      "Sprinkled for blessing and solar power"
+    ]
+  },
+  {
+    "id": "clove",
+    "commonNames": [
+      "Clove",
+      "Cloves"
+    ],
+    "latinName": "Syzygium aromaticum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Studded oranges for pomanders against plague and foul air",
+      "Burned to stop gossip in hoodoo-influenced practice"
+    ]
+  },
+  {
+    "id": "star-anise",
+    "commonNames": [
+      "Star Anise"
+    ],
+    "latinName": "Illicium verum",
+    "category": "herb",
+    "emoji": "⭐",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Eight-pointed star of luck in Chinese folk belief",
+      "Carried whole for psychic opening in modern craft"
+    ]
+  },
+  {
+    "id": "vanilla",
+    "commonNames": [
+      "Vanilla"
+    ],
+    "latinName": "Vanilla planifolia",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Orchid of desire — worn as perfume for attraction",
+      "Bean in sugar jars for sweetness in love and life"
+    ]
+  },
+  {
+    "id": "bay-laurel",
+    "commonNames": [
+      "Bay",
+      "Bay Leaf",
+      "Laurel"
+    ],
+    "latinName": "Laurus nobilis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Wreaths of victory and prophecy in classical lore",
+      "Leaves written with wishes and burned for manifestation"
+    ]
+  },
+  {
+    "id": "juniper",
+    "commonNames": [
+      "Juniper",
+      "Juniper Berries"
+    ],
+    "latinName": "Juniperus communis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Berries burned against plague and evil in European household lore",
+      "Hung at doors for protection in Alpine custom"
+    ]
+  },
+  {
+    "id": "cedar",
+    "commonNames": [
+      "Cedar",
+      "Cedarwood"
+    ],
+    "latinName": "Cedrus",
+    "category": "herb",
+    "emoji": "🌲",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sacred wood of Indigenous North American practice — use with respect and sourcing in mind",
+      "Smoke for purification in many traditions"
+    ]
+  },
+  {
+    "id": "rose",
+    "commonNames": [
+      "Rose",
+      "Rose Petals"
+    ],
+    "latinName": "Rosa",
+    "category": "flower",
+    "emoji": "🌹",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus",
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Queen of flowers — petals in love baths and wedding confetti",
+      "Thorns for protection and secrecy in old hedge witch lore"
+    ]
+  },
+  {
+    "id": "jasmine",
+    "commonNames": [
+      "Jasmine"
+    ],
+    "latinName": "Jasminum officinale",
+    "category": "flower",
+    "emoji": "🌸",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Night-blooming scent of attraction in Middle Eastern and Asian folk custom",
+      "Worn in hair for moon rituals"
+    ],
+    "officinalNote": "Jasminum officinale — among herbs of the official dispensary."
+  },
+  {
+    "id": "frankincense",
+    "commonNames": [
+      "Frankincense"
+    ],
+    "latinName": "Boswellia sacra",
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Incense of temples and tombs since antiquity",
+      "Burned to elevate prayer and honor the sacred"
+    ]
+  },
+  {
+    "id": "myrrh",
+    "commonNames": [
+      "Myrrh"
+    ],
+    "latinName": "Commiphora myrrha",
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Bitter resin of mourning and preservation in ancient rites",
+      "Burned with frankincense for solemn blessing"
+    ]
+  },
+  {
+    "id": "copal",
+    "commonNames": [
+      "Copal"
+    ],
+    "latinName": "Bursera",
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Mesoamerican incense of offering and clearing",
+      "Burned on Day of the Dead altars and in sweat lodges"
+    ]
+  },
+  {
+    "id": "sandalwood",
+    "commonNames": [
+      "Sandalwood"
+    ],
+    "latinName": "Santalum album",
+    "category": "powder",
+    "emoji": "🪵",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sacred wood of Hindu and Buddhist temples",
+      "Powder in paste for blessing the brow in many Asian traditions"
+    ]
+  },
+  {
+    "id": "dragons-blood",
+    "commonNames": [
+      "Dragon's Blood"
+    ],
+    "latinName": "Daemonorops draco",
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Red resin ink for seals and pacts in grimoire tradition",
+      "Added to other incenses to boost their power"
+    ]
+  },
+  {
+    "id": "palo-santo",
+    "commonNames": [
+      "Palo Santo",
+      "Holy Wood"
+    ],
+    "latinName": "Bursera graveolens",
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "South American sacred wood — burned for clearing and blessing",
+      "Used in curanderismo and modern smoke cleansing"
+    ]
+  },
+  {
+    "id": "sweetgrass",
+    "commonNames": [
+      "Sweetgrass"
+    ],
+    "latinName": "Hierochloe odorata",
+    "category": "herb",
+    "emoji": "🌾",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Braided grass of Indigenous North American ceremony — source ethically",
+      "Smoke invites good spirits after clearing"
+    ]
+  },
+  {
+    "id": "rue",
+    "commonNames": [
+      "Rue",
+      "Herb of Grace"
+    ],
+    "latinName": "Ruta graveolens",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Sprigs dipped in holy water for asperging in Catholic folk practice",
+      "Worn against the evil eye in Mediterranean custom"
+    ]
+  },
+  {
+    "id": "wormwood",
+    "commonNames": [
+      "Wormwood",
+      "Absinthe"
+    ],
+    "latinName": "Artemisia absinthium",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Bitter herb of the wilderness in biblical and folk lore",
+      "Burned to summon spirits and open the third eye in craft tradition"
+    ]
+  },
+  {
+    "id": "horehound",
+    "commonNames": [
+      "Horehound",
+      "White Horehound"
+    ],
+    "latinName": "Marrubium vulgare",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Candy of the cough in old apothecary sweets",
+      "Carried for mental clarity in some English county traditions"
+    ]
+  },
+  {
+    "id": "lovage",
+    "commonNames": [
+      "Lovage"
+    ],
+    "latinName": "Levisticum officinale",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Love root of the medieval garden — added to love potions in folk romance",
+      "Leaves worn to attract desire"
+    ],
+    "officinalNote": "Levisticum officinale — official herb of the apothecary."
+  },
+  {
+    "id": "iris",
+    "commonNames": [
+      "Iris",
+      "Orris Root",
+      "Florentine Iris"
+    ],
+    "latinName": "Iris germanica",
+    "category": "herb",
+    "emoji": "🌸",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Orris powder in love sachets and pomanders for its violet scent",
+      "Root hung for protection in German folk practice"
+    ]
+  },
+  {
+    "id": "poppy",
+    "commonNames": [
+      "Poppy",
+      "Opium Poppy"
+    ],
+    "latinName": "Papaver somniferum",
+    "category": "flower",
+    "emoji": "🌸",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Sleep flower of myth and field — associated with Morpheus and death's rest",
+      "Seeds in bread and ritual cakes in old European custom"
+    ]
+  },
+  {
+    "id": "clary-sage",
+    "commonNames": [
+      "Clary Sage"
+    ],
+    "latinName": "Salvia sclarea",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Clear-eye of old monastic infirmaries — seeds in eyes in historical practice",
+      "Used in wine for visions in medieval lore"
+    ]
+  },
+  {
+    "id": "costmary",
+    "commonNames": [
+      "Costmary",
+      "Bible Leaf"
+    ],
+    "latinName": "Tanacetum balsamita",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Leaves pressed in Bibles as bookmarks and pressed for scent",
+      "Gentle herb of women's lore and domestic blessing"
+    ]
+  },
+  {
+    "id": "catmint",
+    "commonNames": [
+      "Catmint",
+      "Catnip"
+    ],
+    "latinName": "Nepeta cataria",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Cat's delight and witch's friend in English village lore",
+      "Drunk for courage before unpleasant tasks"
+    ]
+  },
+  {
+    "id": "pennyroyal",
+    "commonNames": [
+      "Pennyroyal"
+    ],
+    "latinName": "Mentha pulegium",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Pulegium of the Romans — carried against fleas and ill humors",
+      "Associated with peace and strength in old herbals — handle with respect; a potent herb"
+    ]
+  },
+  {
+    "id": "betony",
+    "commonNames": [
+      "Betony",
+      "Wood Betony"
+    ],
+    "latinName": "Betonica officinalis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus",
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Unless a house has betony, the old proverb warns — planted against evil and lightning",
+      "Worn as amulet against nightmares"
+    ],
+    "officinalNote": "Betonica officinalis — an official herb of the dispensary."
+  },
+  {
+    "id": "agrimony",
+    "commonNames": [
+      "Agrimony"
+    ],
+    "latinName": "Agrimonia eupatoria",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Church steeple herb — sleep on agrimony to dream true in English lore",
+      "Returned to sender in reverse-spell work"
+    ]
+  },
+  {
+    "id": "tansy",
+    "commonNames": [
+      "Tansy"
+    ],
+    "latinName": "Tanacetum vulgare",
+    "category": "herb",
+    "emoji": "🌼",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Sprigs packed in coffins to preserve and in linen against moths",
+      "Easter pudding herb in old English custom"
+    ]
+  },
+  {
+    "id": "southernwood",
+    "commonNames": [
+      "Southernwood",
+      "Lad's Love"
+    ],
+    "latinName": "Artemisia abrotanum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Hortulus"
+    ],
+    "folkTradition": [
+      "Gentleman's herb — tucked in wardrobes against moths and for courtship",
+      "Bitter scent of old knot gardens"
+    ]
+  },
+  {
+    "id": "comfrey",
+    "commonNames": [
+      "Comfrey",
+      "Knitbone"
+    ],
+    "latinName": "Symphytum officinale",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Knitbone of the hedge — wrapped in cloth around injuries in country lore",
+      "Planted at the garden gate for safe returns"
+    ],
+    "officinalNote": "Symphytum officinale — official herb of the old shop."
+  },
+  {
+    "id": "hyssop",
+    "commonNames": [
+      "Hyssop"
+    ],
+    "latinName": "Hyssopus officinalis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Biblical herb of purification — bundled for asperging in sacred rites",
+      "Hung in homes to cleanse after illness"
+    ],
+    "officinalNote": "Hyssopus officinalis — among the official apothecary herbs."
+  },
+  {
+    "id": "marshmallow",
+    "commonNames": [
+      "Marshmallow"
+    ],
+    "latinName": "Althaea officinalis",
+    "category": "herb",
+    "emoji": "🌸",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Mallow of the marsh — soothing mucilage in old sweets and folk preparations",
+      "Associated with comfort and gentle love"
+    ],
+    "officinalNote": "Althaea officinalis — official herb of the dispensary."
+  },
+  {
+    "id": "violet",
+    "commonNames": [
+      "Violet",
+      "Heartsease",
+      "Wild Pansy"
+    ],
+    "latinName": "Viola tricolor",
+    "category": "flower",
+    "emoji": "🌸",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Heartsease of Shakespeare and cottage gardens",
+      "Gathered at dawn for love and faery sight in Celtic lore"
+    ]
+  },
+  {
+    "id": "red-clover",
+    "commonNames": [
+      "Red Clover",
+      "Clover"
+    ],
+    "latinName": "Trifolium pratense",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Four-leaf sought for luck — red heads in prosperity baths",
+      "Associated with faery meadows and summer abundance"
+    ]
+  },
+  {
+    "id": "burdock",
+    "commonNames": [
+      "Burdock"
+    ],
+    "latinName": "Arctium lappa",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Burr that clings — carved into protective amulets in Japanese and European lore",
+      "Root gathered for grounding in folk practice"
+    ]
+  },
+  {
+    "id": "angelica",
+    "commonNames": [
+      "Angelica",
+      "Archangel"
+    ],
+    "latinName": "Angelica archangelica",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Root of the archangel — said to bloom on Michaelmas against plague",
+      "Carried against witchcraft in medieval lore"
+    ]
+  },
+  {
+    "id": "bee-balm",
+    "commonNames": [
+      "Bee Balm",
+      "Bergamot",
+      "Oswego Tea"
+    ],
+    "latinName": "Monarda fistulosa",
+    "category": "herb",
+    "emoji": "🌸",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Native American tea herb adopted into colonial folk practice",
+      "Draws bees and hummingbirds — symbol of sweet industry"
+    ]
+  },
+  {
+    "id": "licorice",
+    "commonNames": [
+      "Licorice",
+      "Liquorice"
+    ],
+    "latinName": "Glycyrrhiza glabra",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sweet root of command in hoodoo and folk magic",
+      "Chewed for eloquence and persuasion in old lore"
+    ]
+  },
+  {
+    "id": "garlic",
+    "commonNames": [
+      "Garlic"
+    ],
+    "latinName": "Allium sativum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Hung against vampires and evil in folklore worldwide",
+      "Braids at the door for protection and prosperity"
+    ]
+  },
+  {
+    "id": "pine",
+    "commonNames": [
+      "Pine",
+      "Pine Needles",
+      "Pine Resin"
+    ],
+    "latinName": "Pinus",
+    "category": "resin",
+    "emoji": "🌲",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Evergreen of winter survival — needles in bath for cleansing",
+      "Resin burned for strength and endurance"
+    ]
+  },
+  {
+    "id": "oak",
+    "commonNames": [
+      "Oak",
+      "Oak Bark",
+      "Oak Moss"
+    ],
+    "latinName": "Quercus",
+    "category": "herb",
+    "emoji": "🌳",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "King of trees in Celtic and Germanic lore — mistletoe's host",
+      "Acorns carried for fertility and thunder protection"
+    ]
+  },
+  {
+    "id": "willow",
+    "commonNames": [
+      "Willow",
+      "White Willow"
+    ],
+    "latinName": "Salix alba",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Tree of mourning and moon — wands of flex and surrender",
+      "Branches at Beltane for blessing the waters"
+    ]
+  },
+  {
+    "id": "milk-thistle",
+    "commonNames": [
+      "Milk Thistle"
+    ],
+    "latinName": "Silybum marianum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "White-veined leaf of Marian legend in Christian folk lore",
+      "Carried for protection and against snakebite in old herbals"
+    ]
+  },
+  {
+    "id": "st-johns-wort",
+    "commonNames": [
+      "St. John's Wort"
+    ],
+    "latinName": "Hypericum perforatum",
+    "category": "herb",
+    "emoji": "🌼",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Gathered at Midsummer when the sun stands highest",
+      "Hung over icons for blessing and hung at windows against thunder"
+    ]
+  },
+  {
+    "id": "vervain",
+    "commonNames": [
+      "Vervain",
+      "Verbena"
+    ],
+    "latinName": "Verbena officinalis",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Herb of the cross and of Venus in classical and medieval lore",
+      "Sprinkled at altars and worn for love and protection"
+    ],
+    "officinalNote": "Verbena officinalis — official herb of the dispensary."
+  },
+  {
+    "id": "high-john",
+    "commonNames": [
+      "High John the Conqueror",
+      "John the Conqueror Root"
+    ],
+    "latinName": "Ipomoea purga",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Root of luck and mastery in African American hoodoo tradition",
+      "Carried whole for success and overcoming obstacles"
+    ]
+  },
+  {
+    "id": "black-salt",
+    "commonNames": [
+      "Black Salt"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "🧂",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Blended salt of modern craft — ashes, charcoal, or dye in sea salt",
+      "Sprinkled for banishing and boundary work"
+    ]
+  },
+  {
+    "id": "sea-salt",
+    "commonNames": [
+      "Sea Salt",
+      "Salt"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "🧂",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Oldest purifier — thrown over shoulder, at thresholds, and in circles",
+      "Scattered after arguments to settle the air"
+    ]
+  },
+  {
+    "id": "pink-salt",
+    "commonNames": [
+      "Pink Salt",
+      "Himalayan Pink Salt"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "🧂",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Rose-tinted mineral salt of modern bath and kitchen altars",
+      "Used in self-love and gentle cleansing baths"
+    ]
+  },
+  {
+    "id": "white-candle",
+    "commonNames": [
+      "White Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "All-purpose flame in church and home — purity and open intention",
+      "Lit when the working has no single color yet"
+    ]
+  },
+  {
+    "id": "black-candle",
+    "commonNames": [
+      "Black Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Absorbing flame in reversal and warding work",
+      "Burned to banish, bind, or honor the dark of the year"
+    ]
+  },
+  {
+    "id": "red-candle",
+    "commonNames": [
+      "Red Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Fire color of passion and courage in candle magic",
+      "Lit for love, vigor, and decisive action"
+    ]
+  },
+  {
+    "id": "pink-candle",
+    "commonNames": [
+      "Pink Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Gentle flame of affection and reconciliation",
+      "Burned for friendship, romance, and emotional healing"
+    ]
+  },
+  {
+    "id": "green-candle",
+    "commonNames": [
+      "Green Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Color of growing things and counted coins",
+      "Lit for prosperity, luck, and garden blessing"
+    ]
+  },
+  {
+    "id": "blue-candle",
+    "commonNames": [
+      "Blue Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Cool flame of peace and honest speech",
+      "Burned for tranquility, truth, and safe travel over water"
+    ]
+  },
+  {
+    "id": "purple-candle",
+    "commonNames": [
+      "Purple Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Royal and third-eye color in modern craft",
+      "Lit for power, spirit contact, and deep knowing"
+    ]
+  },
+  {
+    "id": "yellow-candle",
+    "commonNames": [
+      "Yellow Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sun-bright flame of clarity and cheer",
+      "Burned for study, success, and solar festivals"
+    ]
+  },
+  {
+    "id": "orange-candle",
+    "commonNames": [
+      "Orange Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Warm flame between red and gold — change and opportunity",
+      "Lit for fast luck and creative spark"
+    ]
+  },
+  {
+    "id": "brown-candle",
+    "commonNames": [
+      "Brown Candle"
+    ],
+    "latinName": null,
+    "category": "candle",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Earth-dark flame of stability and endurance",
+      "Burned for grounding, animal work, and court matters"
+    ]
+  },
+  {
+    "id": "amethyst",
+    "commonNames": [
+      "Amethyst"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Purple stone of bishops' rings and sobriety in classical lore",
+      "Kept under the pillow for dreams in modern craft"
+    ]
+  },
+  {
+    "id": "rose-quartz",
+    "commonNames": [
+      "Rose Quartz"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Blush stone of Venus in contemporary crystal practice",
+      "Gifted between lovers and kept on altars of the heart"
+    ]
+  },
+  {
+    "id": "clear-quartz",
+    "commonNames": [
+      "Clear Quartz",
+      "Rock Crystal",
+      "Quartz Crystal"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Master stone of scrying spheres and alpine clear water",
+      "Believed to hold and amplify any intention set within it"
+    ]
+  },
+  {
+    "id": "black-tourmaline",
+    "commonNames": [
+      "Black Tourmaline",
+      "Schorl"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🪨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Iron-dark guard stone at thresholds and computer desks",
+      "Buried at property corners for warding in modern practice"
+    ]
+  },
+  {
+    "id": "selenite",
+    "commonNames": [
+      "Selenite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Moon-bright gypsum wand of cleansing altars",
+      "Used to clear other stones and open crown work"
+    ]
+  },
+  {
+    "id": "labradorite",
+    "commonNames": [
+      "Labradorite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Flash stone of northern lights and hidden realms",
+      "Carried by travellers between worlds in modern craft"
+    ]
+  },
+  {
+    "id": "moonstone",
+    "commonNames": [
+      "Moonstone"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🌙",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Adularescent gem of tides and women's cycles",
+      "Set out under the full moon to drink her light"
+    ]
+  },
+  {
+    "id": "carnelian",
+    "commonNames": [
+      "Carnelian"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Blood-orange stone of courage in ancient amulets",
+      "Worn by speakers and warriors for confidence"
+    ]
+  },
+  {
+    "id": "citrine",
+    "commonNames": [
+      "Citrine"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Merchant's stone kept in cash drawers",
+      "Never holds negativity in modern crystal lore"
+    ]
+  },
+  {
+    "id": "obsidian",
+    "commonNames": [
+      "Obsidian",
+      "Black Obsidian"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🪨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Volcanic glass of mirrors and blades since prehistory",
+      "Scrying surface polished to see truth"
+    ]
+  },
+  {
+    "id": "smoky-quartz",
+    "commonNames": [
+      "Smoky Quartz"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🪨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Smoke-tinted quartz of grounding in mountain lore",
+      "Transmutes heavy energy in contemporary practice"
+    ]
+  },
+  {
+    "id": "lapis-lazuli",
+    "commonNames": [
+      "Lapis Lazuli",
+      "Lapis"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Ultramarine stone of Egyptian royalty and starry sky",
+      "Ground for pigment in sacred manuscripts"
+    ]
+  },
+  {
+    "id": "malachite",
+    "commonNames": [
+      "Malachite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Banded green stone of travellers' protection in folk talismans",
+      "Said to break when danger is near"
+    ]
+  },
+  {
+    "id": "fluorite",
+    "commonNames": [
+      "Fluorite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Rainbow cube stone of focus in study magic",
+      "Kept on desks during learning and ritual planning"
+    ]
+  },
+  {
+    "id": "hematite",
+    "commonNames": [
+      "Hematite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🪨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Blood-red iron ore of warriors and grounding",
+      "Carried for strength and legal favor"
+    ]
+  },
+  {
+    "id": "tigers-eye",
+    "commonNames": [
+      "Tiger's Eye",
+      "Tigers Eye"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Chatoyant stone of the hunter's patience",
+      "Carried for luck in games and business"
+    ]
+  },
+  {
+    "id": "pyrite",
+    "commonNames": [
+      "Pyrite",
+      "Fool's Gold"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Spark stone of hearth fires and solar altars",
+      "Clustered in wealth bowls with coins"
+    ]
+  },
+  {
+    "id": "aventurine",
+    "commonNames": [
+      "Green Aventurine",
+      "Aventurine"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Gamblers' stone of lucky opportunity",
+      "Tucked in purses and planted near garden gates"
+    ]
+  },
+  {
+    "id": "bloodstone",
+    "commonNames": [
+      "Bloodstone",
+      "Heliotrope"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Green stone flecked with red — courage in battle lore",
+      "Associated with Christ's blood in medieval legend"
+    ]
+  },
+  {
+    "id": "amazonite",
+    "commonNames": [
+      "Amazonite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Cool green stone of truth-speaking",
+      "Worn to balance temper and open honest speech"
+    ]
+  },
+  {
+    "id": "garnet",
+    "commonNames": [
+      "Garnet"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Deep red traveller's lamp — lit safe return in old lore",
+      "Gifted between lovers for constancy"
+    ]
+  },
+  {
+    "id": "lepidolite",
+    "commonNames": [
+      "Lepidolite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Lilac mica stone of calm in modern crystal rooms",
+      "Kept near the bed for peaceful rest"
+    ]
+  },
+  {
+    "id": "moldavite",
+    "commonNames": [
+      "Moldavite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Teal glass of meteor impact — intense stone in modern craft",
+      "Said to accelerate transformation for those who bond with it"
+    ]
+  },
+  {
+    "id": "jet",
+    "commonNames": [
+      "Jet"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🪨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Fossilized wood of mourning jewelry in Victorian England",
+      "Carried against nightmares and evil spirits"
+    ]
+  },
+  {
+    "id": "sodalite",
+    "commonNames": [
+      "Sodalite"
+    ],
+    "latinName": null,
+    "category": "crystal",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Deep blue stone of logic and honest speech",
+      "Used in study and debate rituals"
+    ]
+  },
+  {
+    "id": "lavender-oil",
+    "commonNames": [
+      "Lavender Oil",
+      "Lavender Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Distilled calm of the herb — anointed on pillows and pulse points",
+      "Added to bath and floor wash for peace"
+    ]
+  },
+  {
+    "id": "rosemary-oil",
+    "commonNames": [
+      "Rosemary Oil",
+      "Rosemary Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Oil of remembrance — rubbed on temples before study",
+      "Used to consecrate tools and clear stagnant air"
+    ]
+  },
+  {
+    "id": "frankincense-oil",
+    "commonNames": [
+      "Frankincense Oil",
+      "Frankincense Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sacred resin distilled — anointed on wrists for ritual",
+      "Blesses altars and elevates prayer"
+    ]
+  },
+  {
+    "id": "myrrh-oil",
+    "commonNames": [
+      "Myrrh Oil",
+      "Myrrh Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Bitter sacred oil of mourning and preservation",
+      "Anointed in underworld and ancestor rites"
+    ]
+  },
+  {
+    "id": "sandalwood-oil",
+    "commonNames": [
+      "Sandalwood Oil",
+      "Sandalwood Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Temple oil of meditation and blessing",
+      "Anointed on third eye in Eastern and Western craft"
+    ]
+  },
+  {
+    "id": "cedarwood-oil",
+    "commonNames": [
+      "Cedarwood Oil",
+      "Cedar Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Wood oil of preservation and sacred chests",
+      "Used in protection blends and male rites of passage"
+    ]
+  },
+  {
+    "id": "patchouli-oil",
+    "commonNames": [
+      "Patchouli Oil",
+      "Patchouli Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Earthy oil of money and earth magic",
+      "Dabbed on currency and worn for attraction"
+    ]
+  },
+  {
+    "id": "rose-oil",
+    "commonNames": [
+      "Rose Oil",
+      "Rose Essential Oil",
+      "Rose Otto"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Queen of oils — single drop in love workings",
+      "Sacred to Venus and Mary in folk devotion"
+    ]
+  },
+  {
+    "id": "jasmine-oil",
+    "commonNames": [
+      "Jasmine Oil",
+      "Jasmine Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Night-blooming oil of seduction and moon rites",
+      "Anointed for prophetic dreams"
+    ]
+  },
+  {
+    "id": "bergamot-oil",
+    "commonNames": [
+      "Bergamot Oil",
+      "Bergamot Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Citrus-spice oil of success and clear speech",
+      "Used in prosperity and confidence blends"
+    ]
+  },
+  {
+    "id": "peppermint-oil",
+    "commonNames": [
+      "Peppermint Oil",
+      "Peppermint Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Cool oil of alertness and clear paths",
+      "Added to wash water to freshen the home"
+    ]
+  },
+  {
+    "id": "cinnamon-oil",
+    "commonNames": [
+      "Cinnamon Oil",
+      "Cinnamon Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Fiery oil of fast luck and heated desire",
+      "Dabbed on green candles and wallet corners"
+    ]
+  },
+  {
+    "id": "clary-sage-oil",
+    "commonNames": [
+      "Clary Sage Oil",
+      "Clary Sage Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Vision oil of diviners and dreamers",
+      "Anointed before scrying and tarot"
+    ]
+  },
+  {
+    "id": "vetiver-oil",
+    "commonNames": [
+      "Vetiver Oil",
+      "Vetiver Essential Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Root oil of deep grounding in Indian and hoodoo practice",
+      "Used in curse-breaking and stability blends"
+    ]
+  },
+  {
+    "id": "van-van-oil",
+    "commonNames": [
+      "Van Van Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Lemon-grass bright oil of New Orleans hoodoo",
+      "Dressing doors and tools for open roads and good luck"
+    ]
+  },
+  {
+    "id": "beeswax",
+    "commonNames": [
+      "Beeswax",
+      "Bee's Wax",
+      "Yellow Beeswax"
+    ],
+    "latinName": null,
+    "category": "resin",
+    "emoji": "🍯",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Foundation of dipped candles and salve bases in old apothecary work",
+      "Honey-scented wax of seals, ointments, and image candles"
+    ]
+  },
+  {
+    "id": "wax",
+    "commonNames": [
+      "Wax",
+      "Candle Wax",
+      "Paraffin Wax",
+      "Blended Wax"
+    ],
+    "latinName": null,
+    "category": "resin",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Moulded and poured for candles, seals, and protective disks",
+      "Mixed with herbs and colour for intention candles"
+    ]
+  },
+  {
+    "id": "tallow",
+    "commonNames": [
+      "Tallow",
+      "Beef Tallow",
+      "Mutton Tallow"
+    ],
+    "latinName": null,
+    "category": "resin",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Rendered fat of old rushlights and emergency candles",
+      "Combined with beeswax in historical household dipping"
+    ]
+  },
+  {
+    "id": "olive-oil",
+    "commonNames": [
+      "Olive Oil",
+      "Virgin Olive Oil",
+      "Extra Virgin Olive Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🫒",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Classic carrier of the Mediterranean dispensary and kitchen",
+      "Lamp oil of sacred rites and base of infused herbal oils"
+    ],
+    "officinalNote": "Olivae oleum — the fixed oil of countless old formulae."
+  },
+  {
+    "id": "carrier-oil",
+    "commonNames": [
+      "Carrier Oil",
+      "Base Oil",
+      "Fixed Oil",
+      "Oil"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Neutral oil for diluting essences and macerating herbs",
+      "Sun- or slow-warmed infusions of botanicals in apothecary practice"
+    ]
+  },
+  {
+    "id": "alcohol",
+    "commonNames": [
+      "Alcohol",
+      "Ethyl Alcohol",
+      "Grain Alcohol",
+      "Ethanol",
+      "Spirits"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🥃",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Menstruum of tinctures, extracts, and perfume in the old stillroom",
+      "Used to fix and preserve volatile preparations"
+    ],
+    "officinalNote": "Spirit of grain — standard solvent of the dispensary shelf."
+  },
+  {
+    "id": "witch-hazel",
+    "commonNames": [
+      "Witch Hazel",
+      "Witch Hazel Distillate",
+      "Hamamelis Water"
+    ],
+    "latinName": "Hamamelis virginiana",
+    "category": "oil",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Astringent distillate of bark and twigs in American folk practice",
+      "Kept for skin washes and as a mild liquid base"
+    ]
+  },
+  {
+    "id": "aqua-vitae",
+    "commonNames": [
+      "Aqua Vitae",
+      "Aqua Vitæ",
+      "Water of Life",
+      "Spirit of Wine"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🥃",
+    "tags": [
+      "common-us",
+      "officinal",
+      "monastic"
+    ],
+    "monasticSources": [
+      "Monastic stillrooms"
+    ],
+    "folkTradition": [
+      "Rectified spirit of wine in Latin apothecary Latin",
+      "Menstruum of tinctures, cordials, and perfumed waters"
+    ],
+    "officinalNote": "The old name for high-proof distilled spirit — not water at all."
+  },
+  {
+    "id": "spirit-of-wine",
+    "commonNames": [
+      "Spirit of Wine",
+      "Rectified Spirit",
+      "Alcohol Rectified"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🥃",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Nearly anhydrous ethanol of the old pharmacopoeia",
+      "Preferred solvent when water would spoil the preparation"
+    ]
+  },
+  {
+    "id": "aqua-regia",
+    "commonNames": [
+      "Aqua Regia",
+      "Royal Water"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "⚗️",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "The alchemist's royal water — mixed acids that dissolve gold in legend and lab",
+      "Named in old texts for metallurgical work, not household craft"
+    ],
+    "officinalNote": "Historical laboratory reagent — recorded for reference, not domestic use."
+  },
+  {
+    "id": "aqua-fortis",
+    "commonNames": [
+      "Aqua Fortis",
+      "Strong Water",
+      "Spirit of Nitre",
+      "Nitric Acid"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "⚗️",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Strong water of the early chemist — etching, testing, and dissolution",
+      "Appears in metallurgical and alchemical manuscripts"
+    ],
+    "officinalNote": "Corrosive acid of the old apothecary laboratory."
+  },
+  {
+    "id": "aqua-distillata",
+    "commonNames": [
+      "Aqua Distillata",
+      "Distilled Water",
+      "Pure Water",
+      "Rose Water Base"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "💧",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Neutral water of the still — base of rosewater, lavender water, and simples",
+      "Used when rain or spring water would carry too much mineral matter"
+    ]
+  },
+  {
+    "id": "vinegar",
+    "commonNames": [
+      "Vinegar",
+      "Spirit of Vinegar",
+      "Acetum",
+      "White Vinegar",
+      "Apple Cider Vinegar"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🫗",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sour wine of the kitchen and the old stillroom",
+      "Four Thieves formulas and cleansing washes in folk practice"
+    ],
+    "officinalNote": "Acetum — acid menstruum of many historical recipes."
+  },
+  {
+    "id": "glycerin",
+    "commonNames": [
+      "Glycerin",
+      "Glycerine",
+      "Vegetable Glycerin"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sweet humectant of later apothecary tinctures and cordials",
+      "Preserves moisture in botanical extracts"
+    ]
+  },
+  {
+    "id": "vitriol",
+    "commonNames": [
+      "Vitriol",
+      "Green Vitriol",
+      "Blue Vitriol",
+      "Copper Sulfate",
+      "Iron Vitriol"
+    ],
+    "latinName": null,
+    "category": "powder",
+    "emoji": "⚗️",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sulfates of iron and copper in early chemistry and alchemy",
+      "Green and blue crystals named in old planetary correspondence"
+    ],
+    "officinalNote": "Laboratory and metallurgical salts — not kitchen herbs."
+  },
+  {
+    "id": "sal-ammoniac",
+    "commonNames": [
+      "Sal Ammoniac",
+      "Sal Ammoniacum",
+      "Ammonium Chloride"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "🧂",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Volatile salt of the old chemist's shelf",
+      "Named in texts on sublimation and metallic work"
+    ]
+  },
+  {
+    "id": "saltpeter",
+    "commonNames": [
+      "Saltpeter",
+      "Saltpetre",
+      "Niter",
+      "Potassium Nitrate"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "✨",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Nitre of caves and barn walls in old pyrotechnic and chemical lore",
+      "One of the three ingredients named in medieval powder recipes"
+    ]
+  },
+  {
+    "id": "alum",
+    "commonNames": [
+      "Alum",
+      "Potassium Alum"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "🧂",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Astringent crystal of dyeing, pickling, and old household alum circles",
+      "Scratched circles for protection in floor and threshold lore"
+    ]
+  },
+  {
+    "id": "quicksilver",
+    "commonNames": [
+      "Quicksilver",
+      "Mercury",
+      "Liquid Mercury"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "☿️",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Liquid metal of alchemical transformation and old thermometers",
+      "Central to historical mercury-work in texts — rarely handled today"
+    ],
+    "officinalNote": "Recorded in old pharmacopoeias; modern practice avoids elemental mercury."
+  },
+  {
+    "id": "oil-of-vitriol",
+    "commonNames": [
+      "Oil of Vitriol",
+      "Oleum Vitrioli",
+      "Spirit of Vitriol",
+      "Sulfuric Acid",
+      "Sulphuric Acid"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "⚗️",
+    "tags": [
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "The oily spirit distilled from green vitriol in old chemistry",
+      "Strong acid of the laboratory — named in metallurgical and alchemical manuscripts"
+    ],
+    "officinalNote": "Historical name for concentrated sulfuric acid — not a fixed oil at all."
+  },
+  {
+    "id": "tartar",
+    "commonNames": [
+      "Tartar",
+      "Cream of Tartar",
+      "Wine Tartar",
+      "Potassium Bitartrate",
+      "Argol"
+    ],
+    "latinName": null,
+    "category": "salt",
+    "emoji": "🧂",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Crystals scraped from wine casks in old stillrooms",
+      "Leavening and mordant of the kitchen and dye-house"
+    ],
+    "officinalNote": "Sal tartari crudum — crude wine lees before refinement."
+  },
+  {
+    "id": "lye",
+    "commonNames": [
+      "Lye",
+      "Caustic Soda",
+      "Sodium Hydroxide",
+      "Potash Lye",
+      "Wood Ash Lye"
+    ],
+    "latinName": null,
+    "category": "powder",
+    "emoji": "⚗️",
+    "tags": [
+      "common-us",
+      "officinal"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Caustic leach of wood ash in soap-making and old household chemistry",
+      "Strong alkali of the lye barrel — never confused with kitchen salt"
+    ],
+    "officinalNote": "Caustic alkali — essential to soap, dangerous to skin and eyes."
+  },
+  {
+    "id": "florida-water",
+    "commonNames": [
+      "Florida Water"
+    ],
+    "latinName": null,
+    "category": "oil",
+    "emoji": "🧴",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Citrus cologne of altars and floor washes since the 1800s",
+      "Splashed for blessing, cooling, and spirit welcome"
+    ]
+  },
+  {
+    "id": "moon-water",
+    "commonNames": [
+      "Moon Water"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "🌙",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Water left overnight under lunar light",
+      "Used to wash tools, anoint candles, and bless the self"
+    ]
+  },
+  {
+    "id": "sun-water",
+    "commonNames": [
+      "Sun Water"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "☀️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Water charged at dawn or noon",
+      "Splashed for vitality and success workings"
+    ]
+  },
+  {
+    "id": "holy-water",
+    "commonNames": [
+      "Holy Water"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Blessed water of church and folk practice alike",
+      "Some witches make their own with salt and flame"
+    ]
+  },
+  {
+    "id": "benzoin-resin",
+    "commonNames": [
+      "Benzoin",
+      "Benzoin Resin"
+    ],
+    "latinName": null,
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Vanilla-sweet incense base in church and temple",
+      "Added to other resins as preservative and fixative"
+    ]
+  },
+  {
+    "id": "amber-resin",
+    "commonNames": [
+      "Amber Resin",
+      "Amber Incense"
+    ],
+    "latinName": null,
+    "category": "resin",
+    "emoji": "🪵",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Warm resin scent of ancient forests preserved",
+      "Burned for love, comfort, and ancestor altars"
+    ]
+  },
+  {
+    "id": "charcoal-disk",
+    "commonNames": [
+      "Charcoal Disk",
+      "Incense Charcoal",
+      "Self-Lighting Charcoal"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🔥",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Quick-light disk for resin and loose incense",
+      "Essential hearth of the smoke altar"
+    ]
+  },
+  {
+    "id": "camphor",
+    "commonNames": [
+      "Camphor",
+      "Camphor Blocks",
+      "Camphor Crystals",
+      "Natural Camphor"
+    ],
+    "latinName": null,
+    "category": "powder",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sharp-scented blocks in hoodoo cleansing baths",
+      "Dissolved in water to clear crossed conditions"
+    ]
+  },
+  {
+    "id": "sulfur-powder",
+    "commonNames": [
+      "Sulfur",
+      "Sulphur",
+      "Sulphur Powder",
+      "Brimstone",
+      "Flowers of Sulphur",
+      "Sublimed Sulfur"
+    ],
+    "latinName": null,
+    "category": "powder",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "officinal",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Brimstone of old exorcism rites and gunpowder lore",
+      "Used sparingly in banishing and hot-foot work"
+    ]
+  },
+  {
+    "id": "red-brick-dust",
+    "commonNames": [
+      "Red Brick Dust"
+    ],
+    "latinName": null,
+    "category": "powder",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Pulverized brick at thresholds in hoodoo tradition",
+      "Laid across doorways against intruders and ill will"
+    ]
+  },
+  {
+    "id": "cornmeal",
+    "commonNames": [
+      "Cornmeal",
+      "Corn Meal"
+    ],
+    "latinName": null,
+    "category": "powder",
+    "emoji": "🌾",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Offering meal at crossroads and doorsteps",
+      "Sprinkled for luck and to feed friendly spirits"
+    ]
+  },
+  {
+    "id": "mason-jar",
+    "commonNames": [
+      "Mason Jar",
+      "Glass Jar",
+      "Spell Jar"
+    ],
+    "latinName": null,
+    "category": "jar",
+    "emoji": "🫙",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Screw-lid vessel of modern witch bottles and honey jars",
+      "Filled, sealed, and buried or kept on the altar"
+    ]
+  },
+  {
+    "id": "witch-bottle",
+    "commonNames": [
+      "Witch Bottle"
+    ],
+    "latinName": null,
+    "category": "jar",
+    "emoji": "🫙",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Bottle charm buried under threshold since early modern England",
+      "Filled with pins, urine, nails, and protective herbs"
+    ]
+  },
+  {
+    "id": "honey-jar",
+    "commonNames": [
+      "Honey Jar",
+      "Sweetening Jar"
+    ],
+    "latinName": null,
+    "category": "jar",
+    "emoji": "🍯",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sugar jar of hoodoo sweetening work",
+      "Named papers and sweeteners combined to soften hearts"
+    ]
+  },
+  {
+    "id": "athame",
+    "commonNames": [
+      "Athame",
+      "Ritual Knife"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🗝️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Black-handled blade of Wiccan and ceremonial practice",
+      "Directs energy and casts the circle — rarely cuts flesh"
+    ]
+  },
+  {
+    "id": "wand",
+    "commonNames": [
+      "Wand"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🪄",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Rod of will from wood, crystal, or metal",
+      "Gathered from lightning-struck or beloved trees in folk custom"
+    ]
+  },
+  {
+    "id": "cauldron",
+    "commonNames": [
+      "Cauldron",
+      "Cast Iron Cauldron"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🥣",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Cruise of the witch and the goddess Cerridwen",
+      "Burns incense, holds brews, and stands as altar centrepiece"
+    ]
+  },
+  {
+    "id": "witches-broom",
+    "commonNames": [
+      "Witch's Broom",
+      "Witches Broom",
+      "Scotch Broom",
+      "Common Broom",
+      "Broom"
+    ],
+    "latinName": "Cytisus scoparius",
+    "category": "herb",
+    "emoji": "🌾",
+    "tags": [
+      "common-us"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Twigs bound for threshold besoms in British and European custom",
+      "Yellow flowers tied to the sweep of Mars and the cleansing of boundaries"
+    ]
+  },
+  {
+    "id": "besom",
+    "commonNames": [
+      "Besom"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🌾",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Birch and broom sweep of threshold cleansing",
+      "Hung bristle-up over doors for protection"
+    ]
+  },
+  {
+    "id": "chalice",
+    "commonNames": [
+      "Chalice",
+      "Cup",
+      "Ritual Cup"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🍶",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Grail of the feminine and the shared cup",
+      "Holds water, wine, or offering on the altar"
+    ]
+  },
+  {
+    "id": "pendulum",
+    "commonNames": [
+      "Pendulum",
+      "Dowsing Pendulum"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🔮",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Weighted bob on chain for yes-no divination",
+      "Crystal, metal, or wood — each with its temperament"
+    ]
+  },
+  {
+    "id": "tarot-deck",
+    "commonNames": [
+      "Tarot Deck",
+      "Tarot Cards"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "📜",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Seventy-eight keys of symbol and story",
+      "Wrapped in silk and fed with readings"
+    ]
+  },
+  {
+    "id": "scrying-mirror",
+    "commonNames": [
+      "Scrying Mirror",
+      "Black Mirror"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🌙",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Obsidian or painted glass of the seeing art",
+      "Gazed into by candlelight for visions"
+    ]
+  },
+  {
+    "id": "mortar-pestle",
+    "commonNames": [
+      "Mortar and Pestle"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🥣",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [
+      "Monastic infirmary gardens"
+    ],
+    "folkTradition": [
+      "Grinding vessel of apothecaries and kitchen witches",
+      "Wood, stone, or brass — each material its own tradition"
+    ]
+  },
+  {
+    "id": "bell",
+    "commonNames": [
+      "Bell",
+      "Altar Bell",
+      "Hand Bell"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🔔",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Rung to mark ritual time and clear stagnant air",
+      "Hung on doors to announce spirit presence"
+    ]
+  },
+  {
+    "id": "feather",
+    "commonNames": [
+      "Feather",
+      "Turkey Feather",
+      "Crow Feather"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "🪶",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Gift of the bird — used to waft smoke and write in dust",
+      "Each species carries its messenger's temperament"
+    ]
+  },
+  {
+    "id": "lodestone",
+    "commonNames": [
+      "Lodestone"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "🧲",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Natural magnet fed with iron filings in hoodoo",
+      "Paired for attraction work or alone for drawing luck"
+    ]
+  },
+  {
+    "id": "coffin-nail",
+    "commonNames": [
+      "Coffin Nail",
+      "Iron Nail"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "🗝️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Iron nail of serious binding and protection work",
+      "Driven into candles or buried at crossroads in old lore"
+    ]
+  },
+  {
+    "id": "coin",
+    "commonNames": [
+      "Coin",
+      "Silver Coin",
+      "Pennies"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Offered at crossroads, wells, and ancestor plates",
+      "Buried in jars for prosperity and left as payment to the land"
+    ]
+  },
+  {
+    "id": "mirror",
+    "commonNames": [
+      "Mirror",
+      "Compact Mirror"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Face of the otherworld in scrying and reversal",
+      "Turned outward on windows to send ill will back"
+    ]
+  },
+  {
+    "id": "tobacco",
+    "commonNames": [
+      "Tobacco",
+      "Loose Tobacco"
+    ],
+    "latinName": "Nicotiana tabacum",
+    "category": "herb",
+    "emoji": "🌿",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Sacred offering plant in many Indigenous traditions — source respectfully",
+      "Used as offering to spirits and in prayer ties"
+    ]
+  },
+  {
+    "id": "coffee",
+    "commonNames": [
+      "Coffee",
+      "Coffee Beans"
+    ],
+    "latinName": "Coffea arabica",
+    "category": "herb",
+    "emoji": "☕",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Grounds read for fortune in Turkish and folk practice",
+      "Burned for alertness and fast action"
+    ]
+  },
+  {
+    "id": "acorn",
+    "commonNames": [
+      "Acorn",
+      "Acorns"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "🌳",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Fruit of the oak king — carried for fertility and thunder luck",
+      "Window charms against lightning in old custom"
+    ]
+  },
+  {
+    "id": "horseshoe",
+    "commonNames": [
+      "Horseshoe"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Iron luck hung above the door — heels up to hold fortune",
+      "Found shoes doubly blessed in country lore"
+    ]
+  },
+  {
+    "id": "bone",
+    "commonNames": [
+      "Bone",
+      "Animal Bone"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "☠️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Remains of respect — used in ancestor and death work",
+      "Ethically sourced bones honor the spirit of the creature"
+    ]
+  },
+  {
+    "id": "egg",
+    "commonNames": [
+      "Egg",
+      "Chicken Egg"
+    ],
+    "latinName": null,
+    "category": "other",
+    "emoji": "✨",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Whole orb of cleansing in folk healing and hoodoo",
+      "Rolled over the body to lift crossed conditions, then buried"
+    ]
+  },
+  {
+    "id": "candle-snuffer",
+    "commonNames": [
+      "Candle Snuffer"
+    ],
+    "latinName": null,
+    "category": "tool",
+    "emoji": "🕯️",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Bell cup to extinguish flame without blowing away the working",
+      "Preserves the charge of the spell in modern practice"
+    ]
+  },
+  {
+    "id": "small-glass-jar",
+    "commonNames": [
+      "Small Glass Jar",
+      "Vial",
+      "Apothecary Bottle"
+    ],
+    "latinName": null,
+    "category": "jar",
+    "emoji": "🫙",
+    "tags": [
+      "common-us",
+      "curio"
+    ],
+    "monasticSources": [],
+    "folkTradition": [
+      "Stoppered vessel of tinctures, oils, and keepsakes",
+      "Labeled and shelved like the old dispensary"
+    ]
+  }
+]

@@ -1,0 +1,239 @@
+:root {
+  /* ============================================
+     Parchment & iron-gall ink — OKLCH tokens
+     Neutrals tinted toward warm parchment (~85°).
+     ============================================ */
+
+  --parchment-0: oklch(0.96 0.018 85);
+  --parchment-1: oklch(0.93 0.028 85);
+  --parchment-2: oklch(0.89 0.035 82);
+  --parchment-3: oklch(0.82 0.045 78);
+  --parchment-4: oklch(0.72 0.055 72);
+
+  --ink:         oklch(0.28 0.035 60);
+  --ink-muted:   oklch(0.45 0.030 55);
+  --ink-soft:    oklch(0.60 0.025 55);
+
+  /* Iron pewter — structural accent, deep borders */
+  --pewter:      oklch(0.30 0.020 285);
+  --pewter-deep: oklch(0.22 0.020 285);
+
+  /* Copper / bronze — primary accent (CTA, active tab) */
+  --copper:      oklch(0.55 0.110 55);
+  --copper-deep: oklch(0.45 0.120 50);
+  --copper-soft: oklch(0.70 0.080 60);
+
+  /* Bottle-green — secondary accent (herbs, success) */
+  --bottle:      oklch(0.42 0.095 155);
+  --bottle-deep: oklch(0.32 0.090 155);
+  --bottle-soft: oklch(0.56 0.070 150);
+
+  /* Candle-amber — attention, unread, toast glow */
+  --candle:      oklch(0.78 0.120 78);
+  --candle-deep: oklch(0.62 0.140 62);
+
+  /* Rare accents */
+  --violet-dried:    oklch(0.55 0.090 315);
+  --oxblood:         oklch(0.42 0.120 25);
+
+  /* Legacy aliases — kept for components not yet migrated */
+  --moss:            var(--bottle);
+  --moss-deep:       var(--bottle-deep);
+  --terracotta:      var(--copper);
+  --terracotta-deep: var(--copper-deep);
+
+  /* Hairline borders — thin and ink-tinted at low alpha */
+  --rule:        color-mix(in oklab, var(--ink) 18%, transparent);
+  --rule-strong: color-mix(in oklab, var(--ink) 32%, transparent);
+  --rule-soft:   color-mix(in oklab, var(--ink) 10%, transparent);
+
+  /* Focus ring — copper at low alpha */
+  --focus-ring: color-mix(in oklab, var(--copper) 45%, transparent);
+
+  /* ============================================
+     Typography — Unna (display) + Literata (body)
+     Fixed rem scale with ~1.25 ratio.
+     ============================================ */
+
+  --font-display: 'Unna', 'Iowan Old Style', Palatino, 'Book Antiqua', Georgia, serif;
+  --font-body:    'Literata', 'Iowan Old Style', Palatino, Georgia, serif;
+
+  --fs-xs:   0.75rem;   /* 12 */
+  --fs-sm:   0.875rem;  /* 14 */
+  --fs-md:   1rem;      /* 16 */
+  --fs-lg:   1.25rem;   /* 20 */
+  --fs-xl:   1.5625rem; /* 25 */
+  --fs-2xl:  1.953rem;  /* 31 */
+  --fs-3xl:  2.441rem;  /* 39 */
+
+  /* Line-heights (light text on parchment reads lighter; give breathing room) */
+  --lh-tight:  1.2;
+  --lh-snug:   1.35;
+  --lh-normal: 1.55;
+  --lh-loose:  1.7;
+
+  /* ============================================
+     Space — 4pt scale with semantic names
+     ============================================ */
+
+  --space-2xs: 0.25rem;  /* 4  */
+  --space-xs:  0.5rem;   /* 8  */
+  --space-sm:  0.75rem;  /* 12 */
+  --space-md:  1rem;     /* 16 */
+  --space-lg:  1.5rem;   /* 24 */
+  --space-xl:  2rem;     /* 32 */
+  --space-2xl: 3rem;     /* 48 */
+  --space-3xl: 4rem;     /* 64 */
+
+  /* ============================================
+     Radii — slightly smaller, less "glossy card"
+     ============================================ */
+
+  --radius-xs: 2px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+
+  /* ============================================
+     Paper shadows — faint, warm, not generic drop
+     ============================================ */
+
+  --shadow-paper-sm: 0 1px 0 color-mix(in oklab, var(--ink) 6%, transparent);
+  --shadow-paper-md:
+    0 1px 0 color-mix(in oklab, var(--ink) 5%, transparent),
+    0 8px 20px color-mix(in oklab, var(--ink) 8%, transparent);
+  --shadow-card-lift:
+    0 1px 0 color-mix(in oklab, var(--ink) 6%, transparent),
+    0 18px 40px color-mix(in oklab, var(--ink) 14%, transparent);
+
+  /* ============================================
+     Layout dimensions
+     ============================================ */
+
+  --tap:      44px;
+  --nav-h:    72px;
+  --header-h: 56px;
+
+  /* ============================================
+     Motion — exponential, paper-like
+     ============================================ */
+
+  --ease-out-quart: cubic-bezier(0.25, 1, 0.5, 1);
+  --ease-out-quint: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo:  cubic-bezier(0.16, 1, 0.3, 1);
+
+  --dur-fast:   140ms;
+  --dur-med:    220ms;
+  --dur-slow:   360ms;
+
+  color-scheme: light;
+}
+
+/* ============================================
+   Reset
+   ============================================ */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-md);
+  line-height: var(--lh-normal);
+  color: var(--ink);
+  background-color: var(--parchment-1);
+  /* Very faint paper texture: warm flecks + subtle vignette */
+  background-image:
+    radial-gradient(1400px 700px at 12% -10%, color-mix(in oklab, var(--bottle) 9%, transparent), transparent 55%),
+    radial-gradient(1100px 600px at 110% 10%, color-mix(in oklab, var(--copper) 10%, transparent), transparent 60%),
+    radial-gradient(1200px 1200px at 50% 120%, color-mix(in oklab, var(--parchment-3) 28%, transparent), transparent 60%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  font-family: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+input,
+textarea,
+select {
+  font-family: inherit;
+  color: inherit;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  margin: 0;
+  line-height: var(--lh-snug);
+  color: var(--ink);
+}
+
+a {
+  color: var(--copper-deep);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+::selection {
+  background: color-mix(in oklab, var(--candle) 45%, transparent);
+  color: var(--ink);
+}
+
+/* Focus — moss ring, not default blue */
+:focus-visible {
+  outline: 2px solid var(--focus-ring);
+  outline-offset: 2px;
+  border-radius: var(--radius-sm);
+}
+
+/* Scrollbar — faint, warm */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-thumb {
+  background: color-mix(in oklab, var(--ink) 18%, transparent);
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: color-mix(in oklab, var(--ink) 32%, transparent);
+}
+
+/* ============================================
+   Reduced motion — honor OS preference everywhere
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
