@@ -2,9 +2,33 @@
 
 A mobile-first witchy inventory app — illuminated parchment meets apothecary grimoire. Stock herbs, candles, crystals, and curios on an illustrated cupboard; gather ingredients in the Cauldron; scribe recipes into the Grimoire and export them as shareable PNGs.
 
-**Live demo:** after deploying (see below) → `https://<your-username>.github.io/<repo-name>/`
+**Live demo:** [https://graawwr.github.io/witch-cupboard/](https://graawwr.github.io/witch-cupboard/)
 
 Built with **React 19 + Vite**. All data stays in your browser (`localStorage`). Installable as a PWA — no account, no server.
+
+---
+
+## Changelog (recent)
+
+### Cupboard
+- **Inventory dropdown** — “Upon the shelf” expands a panel (search lives here, not on the art view)
+- **Grouped by element** — Wood → Water → Fire → Earth → Metal; each group collapsible (expanded by default)
+- **Out of stock** — zero-quantity curios in a collapsible section (hidden while searching); grey name + ochre stock label
+- **Quick cauldron add** — basket button on every row adds 1 unit without opening the item
+
+### Cauldron
+- **Brew** — deducts gathered amounts from cupboard stock (batch multiplier in confirm dialog)
+- **Gather/Restock** — export a **Gathering list** PNG (shopping list, cauldron unchanged) or **Restock cupboard** (add amounts to inventory, including out-of-stock curios, then clear cauldron)
+- **Scribe as recipe** — saves to Grimoire without touching inventory
+
+### Grimoire
+- **Recipe panel** — modal with Brew, Stock to cupboard, Save as image, Edit, Remove
+- **Brew from recipe** — on list tiles and in the panel; deducts saved ingredient amounts (batch support)
+- Recipe editor supports **modifiable units** per ingredient (defaults from cupboard entry)
+
+### Shared
+- `BrewConfirmDialog` + `src/lib/brew.js` — shared stock checks and batch brewing UI
+- `src/data/units.js` — shared unit list for forms and recipe editor
 
 ---
 
@@ -13,21 +37,18 @@ Built with **React 19 + Vite**. All data stays in your browser (`localStorage`).
 What’s built so far:
 
 ### Cupboard (art-first inventory)
-- Full-screen **illustrated cupboard** background with decor sprites that reflect your stock (herbs, candles, jars, crystals, curios)
-- **Five elements** instead of generic categories: Wood 🌿 · Fire 🔥 · Earth 🪨 · Metal 🗝️ · Water 🧴
-- **Ledger overlay** — search, filter by element, sort, and edit via ItemCards; closes back to the cupboard view
+- Full-screen **illustrated cupboard** background with decor sprites that reflect your stock
+- **Five elements**: Wood 🌿 · Fire 🔥 · Earth 🪨 · Metal 🗝️ · Water 🧴 (`ELEMENT_ORDER` in `categories.js`)
+- **Expandable inventory dropdown** — search, filter by element, sort, collapsible element groups, collapsible out-of-stock section
+- **ItemCard ledger rows** — tap to expand actions; one-tap basket to Cauldron; quantity stepper, grimoire note, edit, remove
 - **Stock a curio** — add/edit modal with emoji, quantity, units, and notes
+- Herbarium autocomplete + **Reference panel** per item (~190 catalog entries)
 - Legacy category migration for existing saved data
 
-### Herbarium reference catalog (~190 entries)
-- Autocomplete when naming items — herbs, oils, waxes, salts, and officinal/alchemical staples (beeswax, aqua vitae, aqua regia, lye, tartar, brimstone, etc.)
-- **Reference panel** per item: folk tradition, parts commonly used, worth-heeding cautions (non-obvious hazards only)
-- Correspondence/magical fields removed in favour of practical folk notes
-
 ### Cauldron & Grimoire
-- **Cauldron** — working basket; pull from Cupboard, adjust amounts, brew into a recipe
-- **Grimoire** — saved recipes on an illustrated parchment card frame
-- **PNG export** — share recipe cards to Instagram, group chats, etc.
+- **Cauldron** — working basket; pull from Cupboard, adjust amounts, **Brew** (deduct stock), **Gather/Restock** (PNG list or add to shelf), **Scribe as recipe**
+- **Grimoire** — saved recipes; **Brew** from list or detail panel; illustrated **PNG export** for recipe cards and gathering lists
+- **Recipe panel** modal — view, brew, stock finished brew as new curio, edit, export, delete
 
 ### Design & tech
 - OKLCH parchment palette, **Unna** + **Literata** typography, copper/bottle-green accents
@@ -47,9 +68,9 @@ What’s built so far:
 
 | Tab | What it does |
 |-----|----------------|
-| **Cupboard** | Illustrated shelf view + searchable ledger; stock and edit curios |
-| **Cauldron** | Working basket — gather amounts before scribing a recipe |
-| **Grimoire** | Saved recipe cards with PNG export |
+| **Cupboard** | Illustrated shelf + expandable inventory (search, element groups, out-of-stock section) |
+| **Cauldron** | Working basket — brew, gather/restock shopping list, scribe recipes |
+| **Grimoire** | Saved recipes — brew from stock, export PNGs, stock finished brews |
 
 ---
 
@@ -139,26 +160,31 @@ npm run preview
 src/
   App.jsx                      Tab shell + bottom nav
   screens/
-    CupboardScreen.jsx         Art-first cupboard + ledger
-    CauldronScreen.jsx
-    GrimoireScreen.jsx
-    RecipeDetailScreen.jsx
+    CupboardScreen.jsx         Art cupboard + inventory dropdown
+    CauldronScreen.jsx         Brew, gather/restock, scribe
+    GrimoireScreen.jsx         Recipe list + brew shortcuts
   components/
-    AestheticCupboard.jsx      Illustrated cupboard + decor layer
-    ReferencePanel.jsx         Herbarium reference sheet
+    AestheticCupboard.jsx        Illustrated cupboard + decor layer
+    BrewConfirmDialog.jsx      Shared brew confirmation + batches
+    RestockModal.jsx             Gather list PNG or restock cupboard
+    GatheringListCard.jsx        Export artifact for shopping lists
+    RecipePanel.jsx              Recipe detail modal
+    ReferencePanel.jsx           Herbarium reference sheet
     ItemForm.jsx, ItemCard.jsx, RecipeCard.jsx, …
   store/                       Reducer + localStorage persistence
   data/
-    herbarium.json             ~190 catalog entries
-    herbariumEnrichment.js     Parts used + cautions
-    categories.js              Five elements + migration
-    decorPools.js              Element → decor sprite pools
+    herbarium.json               ~190 catalog entries
+    herbariumEnrichment.js       Parts used + cautions
+    categories.js                Five elements + ELEMENT_ORDER
+    units.js                     Shared unit options
+    decorPools.js                Element → decor sprite pools
   lib/
-    herbarium.js               Search + match by name
-    cupboardDecor.js           Shelf decoration layout
-    exportImage.js             Recipe PNG export
+    brew.js                      Stock checks + brew row helpers
+    herbarium.js                 Search + match by name
+    cupboardDecor.js             Shelf decoration layout
+    exportImage.js               Recipe / gathering list PNG export
   assets/
-    background.png             Cupboard illustration
+    background.png               Cupboard illustration
 public/
   manifest.webmanifest         PWA manifest
   cupboard/decor/              Drop-in decor sprites (see README there)
@@ -173,7 +199,7 @@ Everything under one `localStorage` key: `witch-cupboard:v1`
 ```json
 {
   "items": [{ "id", "name", "category", "quantity", "unit", "emoji", "notes", "createdAt", "updatedAt" }],
-  "cauldron": [{ "itemId", "amount", "unit" }],
+  "cauldron": [{ "itemId", "amount", "unit", "name?", "emoji?", "category?" }],
   "recipes": [{ "id", "title", "intention", "steps", "ingredients", "createdAt" }]
 }
 ```

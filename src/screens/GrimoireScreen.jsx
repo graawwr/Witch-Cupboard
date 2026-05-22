@@ -1,11 +1,22 @@
 import { useMemo, useState } from 'react';
-import { useStore } from '../store/hooks.js';
+import { useActions, useStore } from '../store/hooks.js';
 import EmptyState from '../components/EmptyState.jsx';
+import BrewConfirmDialog from '../components/BrewConfirmDialog.jsx';
+import { maxAffordableBrews, resolveBrewRows } from '../lib/brew.js';
 import { SearchIcon, BookIcon } from '../components/Glyphs.jsx';
 
-export default function GrimoireScreen({ onOpenRecipe, onGoToCauldron }) {
+function canBrewRecipe(recipe, items) {
+  if (!recipe?.ingredients?.length) return false;
+  const rows = resolveBrewRows(recipe.ingredients, items);
+  if (rows.some((r) => (Number(r.amount) || 0) <= 0)) return false;
+  return maxAffordableBrews(rows) >= 1;
+}
+
+export default function GrimoireScreen({ onOpenRecipe, onGoToCauldron, onToast }) {
   const { state } = useStore();
+  const actions = useActions();
   const [query, setQuery] = useState('');
+  const [brewRecipeId, setBrewRecipeId] = useState(null);
 
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -17,6 +28,21 @@ export default function GrimoireScreen({ onOpenRecipe, onGoToCauldron }) {
       (r.ingredients || []).some((i) => (i.name || '').toLowerCase().includes(q)),
     );
   }, [state.recipes, query]);
+
+  const brewRecipe = useMemo(
+    () => state.recipes.find((r) => r.id === brewRecipeId) ?? null,
+    [state.recipes, brewRecipeId],
+  );
+
+  const handleBrew = (times) => {
+    if (!brewRecipe) return;
+    actions.brewRecipe(brewRecipe.id, times);
+    onToast?.(
+      times === 1
+        ? 'Brewed — drawn from the cupboard'
+        : `Brewed ${times} times — drawn from the cupboard`,
+    );
+  };
 
   return (
     <div>
@@ -61,26 +87,49 @@ export default function GrimoireScreen({ onOpenRecipe, onGoToCauldron }) {
         </EmptyState>
       ) : (
         <div className="recipe-grid">
-          {filtered.map((r) => (
-            <button
-              key={r.id}
-              className="recipe-tile"
-              onClick={() => onOpenRecipe?.(r.id)}
-            >
-              <div className="sigil" aria-hidden>
-                {r.ingredients?.[0]?.emoji || '·'}
+          {filtered.map((r) => {
+            const brewable = canBrewRecipe(r, state.items);
+            return (
+              <div className="recipe-tile-row" key={r.id}>
+                <button
+                  type="button"
+                  className="recipe-tile"
+                  onClick={() => onOpenRecipe?.(r.id)}
+                >
+                  <div className="sigil" aria-hidden>
+                    {r.ingredients?.[0]?.emoji || '·'}
+                  </div>
+                  <div className="body">
+                    <h3>{r.title}</h3>
+                    {r.intention ? <div className="desc">{r.intention}</div> : null}
+                  </div>
+                  <div className="count">
+                    {r.ingredients?.length || 0}
+                  </div>
+                </button>
+                <button
+                  type="button"
+                  className="btn accent recipe-tile-brew"
+                  disabled={!brewable}
+                  onClick={() => setBrewRecipeId(r.id)}
+                  aria-label={`Brew ${r.title}`}
+                >
+                  Brew
+                </button>
               </div>
-              <div className="body">
-                <h3>{r.title}</h3>
-                {r.intention ? <div className="desc">{r.intention}</div> : null}
-              </div>
-              <div className="count">
-                {r.ingredients?.length || 0}
-              </div>
-            </button>
-          ))}
+            );
+          })}
         </div>
       )}
+
+      <BrewConfirmDialog
+        open={Boolean(brewRecipe)}
+        onClose={() => setBrewRecipeId(null)}
+        ingredients={brewRecipe?.ingredients}
+        title={brewRecipe ? `Brew ${brewRecipe.title}?` : 'Brew recipe?'}
+        subtitle="The recipe amounts will be drawn from your cupboard stock."
+        onConfirm={handleBrew}
+      />
     </div>
   );
 }

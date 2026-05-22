@@ -6,7 +6,12 @@ export const CATEGORIES = [
   { id: 'water', label: 'Water', emoji: '🧴', unit: 'ml'  },
 ];
 
+/** Display / grouping order for the five elements. */
+export const ELEMENT_ORDER = ['wood', 'water', 'fire', 'earth', 'metal'];
+
 export const CATEGORY_MAP = Object.fromEntries(CATEGORIES.map((c) => [c.id, c]));
+
+export const ORDERED_CATEGORIES = ELEMENT_ORDER.map((id) => CATEGORY_MAP[id]);
 
 /** Old cupboard categories → five elements (for saved inventory). */
 export const LEGACY_CATEGORY_MAP = {

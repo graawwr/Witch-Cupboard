@@ -137,6 +137,14 @@ export function ChevronLeft(props) {
   );
 }
 
+export function ChevronDown(props) {
+  return (
+    <Svg {...props}>
+      <path d="m6 9 6 6 6-6" />
+    </Svg>
+  );
+}
+
 /* ------------ Brand mark ------------ */
 
 /** Tiny sprig — used in the header next to the wordmark. */

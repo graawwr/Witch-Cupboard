@@ -1,19 +1,15 @@
 import { useMemo, useRef, useState } from 'react';
 import Modal from './Modal.jsx';
 import ConfirmDialog from './ConfirmDialog.jsx';
+import BrewConfirmDialog from './BrewConfirmDialog.jsx';
 import ItemForm from './ItemForm.jsx';
 import RecipeEditor from './RecipeEditor.jsx';
 import RecipeCard from './RecipeCard.jsx';
 import ReferenceSection from './ReferenceSection.jsx';
 import { textToLines } from '../lib/textLines.js';
+import { maxAffordableBrews, resolveBrewRows } from '../lib/brew.js';
 import { useActions, useStore } from '../store/hooks.js';
 import { exportNodeAsPng } from '../lib/exportImage.js';
-
-function formatAmt(n) {
-  const v = Number(n) || 0;
-  if (Number.isInteger(v)) return String(v);
-  return v.toFixed(2).replace(/\.?0+$/, '');
-}
 
 function slugify(str) {
   return (str || 'recipe')
@@ -25,7 +21,7 @@ function slugify(str) {
 
 function formatGathered(ingredients) {
   return (ingredients || []).map((ing) => {
-    const amt = formatAmt(ing.amount);
+    const amt = Number(ing.amount) || 0;
     const unit = ing.unit ? `\u00A0${ing.unit}` : '';
     return `${ing.emoji || '·'} ${ing.name} — ${amt}${unit}`;
   });
@@ -71,11 +67,19 @@ export default function RecipePanel({ open, recipeId, onClose, onToast }) {
   const [confirmDeleteOpen, setConfirmDeleteOpen] = useState(false);
   const [stockOpen, setStockOpen] = useState(false);
   const [editOpen, setEditOpen] = useState(false);
+  const [brewOpen, setBrewOpen] = useState(false);
 
   const recipe = useMemo(
     () => state.recipes.find((r) => r.id === recipeId) ?? null,
     [state.recipes, recipeId],
   );
+
+  const canBrew = useMemo(() => {
+    if (!recipe?.ingredients?.length) return false;
+    const rows = resolveBrewRows(recipe.ingredients, state.items);
+    if (rows.some((r) => (Number(r.amount) || 0) <= 0)) return false;
+    return maxAffordableBrews(rows) >= 1;
+  }, [recipe, state.items]);
 
   const stockDraft = useMemo(() => {
     if (!recipe) return null;
@@ -111,6 +115,15 @@ export default function RecipePanel({ open, recipeId, onClose, onToast }) {
     }
   };
 
+  const handleBrew = (times) => {
+    actions.brewRecipe(recipe.id, times);
+    onToast?.(
+      times === 1
+        ? 'Brewed — drawn from the cupboard'
+        : `Brewed ${times} times — drawn from the cupboard`,
+    );
+  };
+
   return (
     <>
       <Modal
@@ -123,7 +136,15 @@ export default function RecipePanel({ open, recipeId, onClose, onToast }) {
         subtitle="A recipe scribed in your grimoire."
         footer={
           <div className="recipe-panel-footer">
-            <button type="button" className="btn accent" onClick={() => setStockOpen(true)}>
+            <button
+              type="button"
+              className="btn accent"
+              disabled={!canBrew}
+              onClick={() => setBrewOpen(true)}
+            >
+              Brew
+            </button>
+            <button type="button" className="btn" onClick={() => setStockOpen(true)}>
               Stock to cupboard
             </button>
             <button type="button" className="btn primary" onClick={handleExport} disabled={busy}>
@@ -138,7 +159,6 @@ export default function RecipePanel({ open, recipeId, onClose, onToast }) {
           </div>
         }
       >
-        <div className="recipe-modal-art" aria-hidden />
         <div className="recipe-modal-content">
           <RecipeBody recipe={recipe} />
           {errorMsg ? (
@@ -150,6 +170,15 @@ export default function RecipePanel({ open, recipeId, onClose, onToast }) {
       <div className="recipe-export-host" aria-hidden>
         <RecipeCard ref={cardRef} recipe={recipe} />
       </div>
+
+      <BrewConfirmDialog
+        open={brewOpen}
+        onClose={() => setBrewOpen(false)}
+        ingredients={recipe.ingredients}
+        title={`Brew ${recipe.title}?`}
+        subtitle="The recipe amounts will be drawn from your cupboard stock."
+        onConfirm={handleBrew}
+      />
 
       <ItemForm
         open={stockOpen}
@@ -165,6 +194,7 @@ export default function RecipePanel({ open, recipeId, onClose, onToast }) {
       />
 
       <RecipeEditor
+        key={recipe.id}
         open={editOpen}
         onClose={() => setEditOpen(false)}
         recipe={recipe}

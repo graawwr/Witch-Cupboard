@@ -119,6 +119,15 @@ Never ship these patterns:
 - PNG export is via `html-to-image` in `src/lib/exportImage.js`.
 - Emoji may be used as user-chosen item icons (they're flexible personality). Avoid emoji for decorative UI glyphs, section dividers, or ornaments — use SVG or typography there.
 
+### Inventory & brewing flows
+
+- **Cupboard list** — expandable dropdown (`CupboardScreen`); items grouped by `ELEMENT_ORDER` (wood → water → fire → earth → metal); out-of-stock (qty 0) in a collapsed section, hidden during search.
+- **Cauldron brew** — `BREW_CAULDRON` deducts cauldron amounts × batch; clears cauldron.
+- **Recipe brew** — `BREW_RECIPE` deducts saved ingredient amounts × batch; recipe stays in Grimoire.
+- **Restock** — `RESTOCK_FROM_CAULDRON` adds amounts to existing shelf items (including qty 0); clears cauldron. Gathering list PNG export does not clear cauldron.
+- Shared UI: `BrewConfirmDialog` + `src/lib/brew.js` for stock validation and batch count.
+- Scribing a recipe (`SAVE_RECIPE`) never modifies cupboard stock.
+
 ## Scripts
 
 - `npm run dev` — start the dev server (use `-- --host` to test on LAN / phone)

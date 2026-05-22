@@ -25,10 +25,15 @@ export function useActions() {
       removeFromCauldron: (itemId) =>
         dispatch({ type: Actions.REMOVE_FROM_CAULDRON, payload: { itemId } }),
       clearCauldron: () => dispatch({ type: Actions.CLEAR_CAULDRON }),
+      brewCauldron: (times = 1) => dispatch({ type: Actions.BREW_CAULDRON, payload: { times } }),
+      restockFromCauldron: (entries) =>
+        dispatch({ type: Actions.RESTOCK_FROM_CAULDRON, payload: { entries } }),
 
       saveRecipe: (payload) => dispatch({ type: Actions.SAVE_RECIPE, payload }),
       updateRecipe: (id, changes) => dispatch({ type: Actions.UPDATE_RECIPE, payload: { id, changes } }),
       deleteRecipe: (id) => dispatch({ type: Actions.DELETE_RECIPE, payload: { id } }),
+      brewRecipe: (recipeId, times = 1) =>
+        dispatch({ type: Actions.BREW_RECIPE, payload: { recipeId, times } }),
     }),
     [dispatch],
   );

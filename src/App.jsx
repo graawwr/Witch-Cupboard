@@ -56,12 +56,14 @@ function Shell() {
                   showToast('Added to the Grimoire');
                 }}
                 onGoToCupboard={() => setTab('cupboard')}
+                onToast={showToast}
               />
             )}
             {tab === 'grimoire' && (
               <GrimoireScreen
                 onOpenRecipe={(id) => setOpenRecipeId(id)}
                 onGoToCauldron={() => setTab('cauldron')}
+                onToast={showToast}
               />
             )}
           </main>

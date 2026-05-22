@@ -2,11 +2,10 @@ import { useState } from 'react';
 import Modal from './Modal.jsx';
 import ConfirmDialog from './ConfirmDialog.jsx';
 import { CATEGORIES, EMOJI_PALETTE, categoryMeta } from '../data/categories.js';
+import { DEFAULT_UNITS } from '../data/units.js';
 import { useActions } from '../store/hooks.js';
 
-const DEFAULT_UNITS = ['pcs', 'g', 'kg', 'ml', 'oz', 'tsp', 'tbsp', 'drops', 'sprigs'];
-
-function ItemFormBody({ initialItem, onClose, onSaved }) {
+export default function ItemForm({ open, onClose, onSaved, initialItem, title, subtitle }) {
   const actions = useActions();
   const isEdit = Boolean(initialItem?.id);
 
@@ -54,101 +53,112 @@ function ItemFormBody({ initialItem, onClose, onSaved }) {
     onClose?.();
   };
 
-  const handleDelete = () => {
-    if (!initialItem) return;
-    setConfirmDeleteOpen(true);
-  };
+  if (!open) return null;
 
   return (
     <>
-      <div className="field">
-        <label>Name</label>
-        <input
-          className="input"
-          placeholder="e.g. Mugwort"
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          autoFocus
-        />
-      </div>
-
-      <div className="field">
-        <label>Category</label>
-        <div className="chips chips-inline">
-          {CATEGORIES.map((c) => (
-            <button
-              key={c.id}
-              type="button"
-              className={'chip' + (category === c.id ? ' active' : '')}
-              onClick={() => onCategoryChange(c.id)}
-            >
-              <span>{c.emoji}</span>
-              <span>{c.label}</span>
+      <Modal
+        open
+        onClose={onClose}
+        elevated
+        title={title || (isEdit ? 'Edit ingredient' : 'Stock the cupboard')}
+        subtitle={
+          subtitle
+          || (isEdit
+            ? 'Adjust the details of this ingredient.'
+            : 'Sort it by element — wood, fire, earth, metal, or water.')
+        }
+        footer={
+          <>
+            {isEdit ? (
+              <button type="button" className="btn danger" onClick={() => setConfirmDeleteOpen(true)}>
+                Remove
+              </button>
+            ) : (
+              <button type="button" className="btn ghost" onClick={onClose}>Cancel</button>
+            )}
+            <button type="button" className="btn primary" disabled={!canSave} onClick={handleSave}>
+              {isEdit ? 'Save' : 'Stock it'}
             </button>
-          ))}
-        </div>
-      </div>
-
-      <div className="form-grid-2">
+          </>
+        }
+      >
         <div className="field">
-          <label>Quantity</label>
+          <label>Name</label>
           <input
             className="input"
-            type="number"
-            inputMode="decimal"
-            value={quantity}
-            onChange={(e) => setQuantity(e.target.value)}
+            placeholder="e.g. Mugwort"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            autoFocus
           />
         </div>
+
         <div className="field">
-          <label>Unit</label>
-          <select className="select" value={unit} onChange={(e) => setUnit(e.target.value)}>
-            {DEFAULT_UNITS.map((u) => (
-              <option key={u} value={u}>{u}</option>
+          <label>Category</label>
+          <div className="chips chips-inline">
+            {CATEGORIES.map((c) => (
+              <button
+                key={c.id}
+                type="button"
+                className={'chip' + (category === c.id ? ' active' : '')}
+                onClick={() => onCategoryChange(c.id)}
+              >
+                <span>{c.emoji}</span>
+                <span>{c.label}</span>
+              </button>
             ))}
-          </select>
+          </div>
         </div>
-      </div>
 
-      <div className="field">
-        <label>Emoji</label>
-        <div className="emoji-grid">
-          {EMOJI_PALETTE.map((e) => (
-            <button
-              key={e}
-              type="button"
-              className={emoji === e ? 'active' : ''}
-              onClick={() => setEmoji(e)}
-              aria-label={`Choose ${e}`}
-            >
-              {e}
-            </button>
-          ))}
+        <div className="form-grid-2">
+          <div className="field">
+            <label>Quantity</label>
+            <input
+              className="input"
+              type="number"
+              inputMode="decimal"
+              value={quantity}
+              onChange={(e) => setQuantity(e.target.value)}
+            />
+          </div>
+          <div className="field">
+            <label>Unit</label>
+            <select className="select" value={unit} onChange={(e) => setUnit(e.target.value)}>
+              {DEFAULT_UNITS.map((u) => (
+                <option key={u} value={u}>{u}</option>
+              ))}
+            </select>
+          </div>
         </div>
-      </div>
 
-      <div className="field">
-        <label>Notes</label>
-        <textarea
-          className="textarea"
-          placeholder="Where it came from, how you use it, anything to remember…"
-          value={notes}
-          onChange={(e) => setNotes(e.target.value)}
-        />
-      </div>
+        <div className="field">
+          <label>Emoji</label>
+          <div className="emoji-grid">
+            {EMOJI_PALETTE.map((e) => (
+              <button
+                key={e}
+                type="button"
+                className={emoji === e ? 'active' : ''}
+                onClick={() => setEmoji(e)}
+                aria-label={`Choose ${e}`}
+              >
+                {e}
+              </button>
+            ))}
+          </div>
+        </div>
 
-      <div className="modal-footer">
-        {isEdit ? (
-          <button className="btn danger" onClick={handleDelete} aria-label="Remove from the cupboard">
-            Remove
-          </button>
-        ) : (
-          <button className="btn ghost" type="button" onClick={onClose}>Cancel</button>
-        )}
-        <button className="btn primary" type="button" disabled={!canSave} onClick={handleSave}>
-          {isEdit ? 'Save' : 'Stock it'}
-        </button>
-      </div>
+        <div className="field">
+          <label>Notes</label>
+          <textarea
+            className="textarea"
+            placeholder="Where it came from, how you use it, anything to remember…"
+            value={notes}
+            onChange={(e) => setNotes(e.target.value)}
+          />
+        </div>
+      </Modal>
 
       <ConfirmDialog
         open={confirmDeleteOpen}
@@ -165,32 +175,5 @@ function ItemFormBody({ initialItem, onClose, onSaved }) {
         }}
       />
     </>
-  );
-}
-
-export default function ItemForm({ open, onClose, onSaved, initialItem, title, subtitle }) {
-  const isEdit = Boolean(initialItem?.id);
-  return (
-    <Modal
-      open={open}
-      onClose={onClose}
-      elevated
-      title={title || (isEdit ? 'Edit ingredient' : 'Stock the cupboard')}
-      subtitle={
-        subtitle
-        || (isEdit
-          ? 'Adjust the details of this ingredient.'
-          : 'Sort it by element — wood, fire, earth, metal, or water.')
-      }
-    >
-      {open ? (
-        <ItemFormBody
-          key={initialItem?.id || 'new'}
-          initialItem={initialItem}
-          onClose={onClose}
-          onSaved={onSaved}
-        />
-      ) : null}
-    </Modal>
   );
 }

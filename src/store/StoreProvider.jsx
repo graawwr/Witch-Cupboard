@@ -120,18 +120,27 @@ function reducer(state, action) {
 
     case Actions.ADD_TO_CAULDRON: {
       const { itemId, amount, unit } = action.payload;
+      const item = state.items.find((it) => it.id === itemId);
+      const snapshot = item
+        ? { name: item.name, emoji: item.emoji, category: item.category }
+        : {};
       const existing = state.cauldron.find((c) => c.itemId === itemId);
       if (existing) {
         return {
           ...state,
           cauldron: state.cauldron.map((c) =>
-            c.itemId === itemId ? { ...c, amount: (Number(c.amount) || 0) + Number(amount) } : c,
+            c.itemId === itemId
+              ? { ...c, amount: (Number(c.amount) || 0) + Number(amount), ...snapshot }
+              : c,
           ),
         };
       }
       return {
         ...state,
-        cauldron: [...state.cauldron, { itemId, amount: Number(amount) || 0, unit }],
+        cauldron: [
+          ...state.cauldron,
+          { itemId, amount: Number(amount) || 0, unit: unit || item?.unit || '', ...snapshot },
+        ],
       };
     }
 
@@ -155,6 +164,39 @@ function reducer(state, action) {
 
     case Actions.CLEAR_CAULDRON: {
       return { ...state, cauldron: [] };
+    }
+
+    case Actions.BREW_CAULDRON: {
+      const t = now();
+      const times = Math.max(1, Math.floor(Number(action.payload?.times) || 1));
+      const items = state.items.map((it) => {
+        const entry = state.cauldron.find((c) => c.itemId === it.id);
+        if (!entry) return it;
+        const deduct = (Number(entry.amount) || 0) * times;
+        return {
+          ...it,
+          quantity: Math.max(0, (Number(it.quantity) || 0) - deduct),
+          updatedAt: t,
+        };
+      });
+      return { ...state, items, cauldron: [] };
+    }
+
+    case Actions.RESTOCK_FROM_CAULDRON: {
+      const t = now();
+      const entries = action.payload?.entries || [];
+      const items = state.items.map((it) => {
+        const entry = entries.find((e) => e.itemId === it.id);
+        if (!entry) return it;
+        const add = Math.max(0, Number(entry.amount) || 0);
+        if (add <= 0) return it;
+        return {
+          ...it,
+          quantity: (Number(it.quantity) || 0) + add,
+          updatedAt: t,
+        };
+      });
+      return { ...state, items, cauldron: [] };
     }
 
     case Actions.SAVE_RECIPE: {
@@ -187,6 +229,25 @@ function reducer(state, action) {
 
     case Actions.DELETE_RECIPE: {
       return { ...state, recipes: state.recipes.filter((r) => r.id !== action.payload.id) };
+    }
+
+    case Actions.BREW_RECIPE: {
+      const t = now();
+      const times = Math.max(1, Math.floor(Number(action.payload?.times) || 1));
+      const recipe = state.recipes.find((r) => r.id === action.payload.recipeId);
+      if (!recipe) return state;
+      const ingredients = recipe.ingredients || [];
+      const items = state.items.map((it) => {
+        const ing = ingredients.find((i) => i.itemId === it.id);
+        if (!ing) return it;
+        const deduct = (Number(ing.amount) || 0) * times;
+        return {
+          ...it,
+          quantity: Math.max(0, (Number(it.quantity) || 0) - deduct),
+          updatedAt: t,
+        };
+      });
+      return { ...state, items };
     }
 
     default:

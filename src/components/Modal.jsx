@@ -16,10 +16,15 @@ export default function Modal({
   const subtitleId = useId();
 
   useEffect(() => {
-    if (!open) return;
+    if (!open) return undefined;
     const onKey = (e) => { if (e.key === 'Escape') onClose?.(); };
     document.addEventListener('keydown', onKey);
-    return () => document.removeEventListener('keydown', onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
+    return () => {
+      document.removeEventListener('keydown', onKey);
+      document.body.style.overflow = prevOverflow;
+    };
   }, [open, onClose]);
 
   if (!open) return null;
@@ -41,9 +46,13 @@ export default function Modal({
     >
       <div className={'modal' + (modalClass ? ` ${modalClass}` : '')}>
         <div className="modal-handle" />
-        {title ? <div className="modal-title" id={titleId}>{title}</div> : null}
-        {subtitle ? <div className="modal-sub" id={subtitleId}>{subtitle}</div> : null}
-        {children}
+        {title || subtitle ? (
+          <div className="modal-header">
+            {title ? <div className="modal-title" id={titleId}>{title}</div> : null}
+            {subtitle ? <div className="modal-sub" id={subtitleId}>{subtitle}</div> : null}
+          </div>
+        ) : null}
+        <div className="modal-body">{children}</div>
         {footer ? <div className="modal-footer">{footer}</div> : null}
       </div>
     </div>,

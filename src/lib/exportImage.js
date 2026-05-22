@@ -3,7 +3,7 @@ import plantTemplateUrl from '../assets/planttemplate.jpg';
 
 const PARCHMENT_BG = '#ebe3cf';
 const EXPORT_WIDTH = 960;
-const EXPORT_HEIGHT = Math.round(EXPORT_WIDTH * (1738 / 3201));
+const MIN_EXPORT_HEIGHT = Math.round(EXPORT_WIDTH * (1738 / 3201));
 
 let plantTemplateReady;
 
@@ -73,13 +73,19 @@ async function validatePngBlob(blob) {
   }
 }
 
-async function renderToBlob(node, { skipFonts }) {
+function measureExportHeight(node) {
+  const rect = node.getBoundingClientRect();
+  const height = Math.ceil(Math.max(rect.height, node.scrollHeight, node.offsetHeight));
+  return Math.max(MIN_EXPORT_HEIGHT, height);
+}
+
+async function renderToBlob(node, height, { skipFonts }) {
   const canvas = await toCanvas(node, {
     backgroundColor: PARCHMENT_BG,
     width: EXPORT_WIDTH,
-    height: EXPORT_HEIGHT,
+    height,
     canvasWidth: EXPORT_WIDTH,
-    canvasHeight: EXPORT_HEIGHT,
+    canvasHeight: height,
     pixelRatio: 1,
     skipFonts,
   });
@@ -90,7 +96,7 @@ async function renderToBlob(node, { skipFonts }) {
 
 /**
  * Render a DOM node to a downloadable PNG.
- * Uses the live node at a fixed export size so layout and images stay intact.
+ * Height expands to fit the full recipe text at export width.
  */
 export async function exportNodeAsPng(node, filename = 'recipe.png') {
   if (!node) throw new Error('No node to export');
@@ -104,11 +110,14 @@ export async function exportNodeAsPng(node, filename = 'recipe.png') {
     await waitForImages(node);
     await new Promise((r) => window.setTimeout(r, 150));
 
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const height = measureExportHeight(node);
+
     let blob;
     try {
-      blob = await renderToBlob(node, { skipFonts: false });
+      blob = await renderToBlob(node, height, { skipFonts: false });
     } catch {
-      blob = await renderToBlob(node, { skipFonts: true });
+      blob = await renderToBlob(node, height, { skipFonts: true });
     }
 
     downloadBlob(blob, filename);
