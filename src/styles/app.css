@@ -1895,6 +1895,33 @@
   color: var(--ink-soft);
 }
 
+.field-counter {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: var(--fs-xs);
+  color: var(--ink-soft);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  transition: color var(--dur-fast) var(--ease-out-quart);
+}
+
+.field-counter.is-near {
+  color: var(--copper-deep);
+}
+
+.field-counter.inline {
+  display: inline-block;
+  margin-left: var(--space-xs);
+  text-align: left;
+  text-transform: none;
+}
+
+.field-warning {
+  color: var(--copper-deep);
+  padding: var(--space-2xs) 0 var(--space-xs);
+}
+
 .hint-block {
   padding: 10px 0;
 }
