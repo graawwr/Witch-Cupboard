@@ -592,16 +592,20 @@
   font-family: var(--font-body);
   font-size: var(--fs-xs);
   color: var(--ink-muted);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  max-width: 36ch;
+  overflow-wrap: anywhere;
 }
 
 .item-card .actions {
+  grid-column: 2 / -1;
   display: flex;
   align-items: center;
-  gap: var(--space-xs);
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+
+.item-card .actions .inline-actions-tight {
+  margin-left: auto;
 }
 
 .icon-btn {
