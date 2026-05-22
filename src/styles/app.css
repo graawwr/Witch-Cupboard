@@ -592,20 +592,16 @@
   font-family: var(--font-body);
   font-size: var(--fs-xs);
   color: var(--ink-muted);
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 36ch;
 }
 
 .item-card .actions {
-  grid-column: 2 / -1;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: var(--space-sm);
-  flex-wrap: wrap;
-}
-
-.item-card .actions .inline-actions-tight {
-  margin-left: auto;
+  gap: var(--space-xs);
 }
 
 .icon-btn {
@@ -1894,6 +1890,33 @@
   font-style: italic;
   font-size: var(--fs-xs);
   color: var(--ink-soft);
+}
+
+.field-counter {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: var(--fs-xs);
+  color: var(--ink-soft);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  transition: color var(--dur-fast) var(--ease-out-quart);
+}
+
+.field-counter.is-near {
+  color: var(--copper-deep);
+}
+
+.field-counter.inline {
+  display: inline-block;
+  margin-left: var(--space-xs);
+  text-align: left;
+  text-transform: none;
+}
+
+.field-warning {
+  color: var(--copper-deep);
+  padding: var(--space-2xs) 0 var(--space-xs);
 }
 
 .hint-block {
